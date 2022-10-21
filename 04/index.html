@@ -1,135 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Denis Novik</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/css/styles.css">    
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Document</title>
 </head>
 <body>
     <header id="header">
         <div class="container">
-            <nav class="main_menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About me</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contacts</a></li>
-                </ul>
-            </nav>
-        </div>
+            <h1>Форма реєстрації</h1>
+        </div>   
     </header>
     <main>
-        <section class="first_page">
-            <div class="container">
-                <h1>Denis Novik</h1>
-                    <img src="assets/img/photo_main.jpg" alt="">
-            </div>
-        </section>
-        <section class="about_me gray-bg">
-            <div class="container">
-                <h2 class="section-title">About me</h2>
-                <div class="content">
-                    <p>Hi, I'm Denis – UX/UI designer from Minsk.<br>
-                        I'm interested in design and everything connected with it.</p>
-                    <p>I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</p>
-                    <p>Ready to implement excellent projects <br> with wonderful people.</p>
-                </div>                        
-            </div>
-        </section>
-        <section class="skills">
-            <div class="container">
-                <h2 class="skills-title">Skills</h2>
-                <div class="i_work_as">I work in such programs as</div>
-                    <div class="skills_image">
-                        <ul class="skills_list">
-                            <li> <img src="assets/img/Ps_icon.png" alt="Adobe Photoshop" class="skills_image">
-                                <div class="skills_text">Adobe <br> Photoshop</div>
-                                <img src="assets/img/star_black.svg" alt="star" class="star">
-                                <img src="assets/img/star_black.svg" alt="star" class="star">
-                                <img src="assets/img/star_white.svg" alt="star" class="star">
-                                <img src="assets/img/star_white.svg" alt="star" class="star">
-                                <img src="assets/img/star_white.svg" alt="star" class="star">
-                            </li>
-                            <li> <img src="assets/img/Ai_icon.png" alt="Adobe Illustrator" class="skills_image">
-                                <div class="skills_text">Adobe <br> Illustrator</div>
-                                <img src="assets/img/star_black.svg" alt="star" class="star">
-                                <img src="assets/img/star_black.svg" alt="star" class="star">
-                                <img src="assets/img/star_black.svg" alt="star" class="star">
-                                <img src="assets/img/star_white.svg" alt="star" class="star">
-                                <img src="assets/img/star_white.svg" alt="star" class="star">
-                            </li>
-                            <li> <img src="assets/img/Ae_icon.png" alt="Adobe After Effects" class="skills_image">
-                                <div class="skills_text">Adobe <br> After Effects</div>
-                                <img src="assets/img/star_black.svg" alt="star" class="star">
-                                <img src="assets/img/star_black.svg" alt="star" class="star">
-                                <img src="assets/img/star_black.svg" alt="star" class="star">
-                                <img src="assets/img/star_black.svg" alt="star" class="star">
-                                <img src="assets/img/star_white.svg" alt="star" class="star">
-                            </li>
-                            <li class="last_skill">
-                                <img src="assets/img/Figma_icon.png" alt="Figma" class="skills_image">
-                                <div class="figma_skills_text">Figma</div>
-                                <img src="assets/img/star_black.svg" alt="star" class="star">
-                                <img src="assets/img/star_black.svg" alt="star" class="star">
-                                <img src="assets/img/star_black.svg" alt="star" class="star">
-                                <img src="assets/img/star_black.svg" alt="star" class="star">
-                                <img src="assets/img/star_black.svg" alt="star" class="star">
-                            </li>
-                        </ul>
+        <div class="container"> 
+            <form method="post" action="#" id="my_form" onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;">                      
+                <fieldset>
+                    <legend>Загальна інформація</legend>
+                    <div class="form-row">
+                        <label for="user-name">Повне і'мя</label>
+                        <input type="text" name="name" id="user-name">
                     </div>
-            </div>
-        </section>
-        <section class="portfolio gray-bg">
-            <div class="container">
-                <h2 class="section-title">Portfolio</h2>
-                <div class="portfolio_item">
-                    <img src="assets/img/Fashion-Store.jpg" alt="Online fashion store - Homepage">
-                    <div class="portfolio_link">
-                        <a href="#">Online fashion store - Homepage</a>
+                    <label for="user-email">Email</label>
+                        <div class="form-row">
+                        <input type="email" name="email" id="user-email">
                     </div>
-                </div>
-                <div class="portfolio_item">
-                    <img src="assets/img/reebok_web.jpg" alt="Reebok Store - Concept">
-                    <div class="portfolio_link">
-                        <a href="#">Reebok Store - Concept</a>
+                </fieldset>
+                <fieldset>
+                    <legend>Встанови пароль</legend>
+                    <div class="form-row">
+                        <label for="pass">Пароль</label>
+                        <input type="password" name="password" id="pass">
                     </div>
-                </div>
-                <div class="portfolio_item">
-                        <div class="last_item">
-                            <img src="assets/img/braun-landing.jpg" alt="Braun Landing Page - Concept">
-                            <div class="portfolio_link">                       
-                            <a href="#">Braun Landing Page - Concept</a>
-                        </div>
+                    <label for="confirm-pass">Пароль ще раз</label>
+                    <div class="form-row">
+                        <input type="password" name="confirm-pass" id="confirm-pass">
                     </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer id="footer">
-        <div class="container">
-            <h2 class="footer_title">Contacts</h2>
-                <p>Want to know more or just chat? <br> You are welcome!</p>
-            <div class="button_wrap">
-                <button type="button" class="btn">Send massege</button>
-            </div>
-            <nav class="footer_menu">
-                <ul>
-                    <li><a href="#" target="_blank"><img src="assets/img/in_icon.png" alt="LinkedIn"></a></li>
-                    <li><a href="#" target="_blank"><img src="assets/img/instagram_icon.png" alt="Instagram"></a></li>
-                    <li><a href="#" target="_blank"><img src="assets/img/behance_icon.png" alt="Behance"></a></li>
-                    <li><a href="#" target="_blank"><img src="assets/img/dribbble_icon.png" alt="Dribbble"></a></li>
-                </ul>
-            </nav>
-            <div class="like_me">             
-                <p>Like me on <br> LinkedIn, Instagram, Behance, <br> Dribble</p>
-            </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Інша інформація</legend>
+                    <div class="form-row">
+                        <label>Стать</label>
+                        <ul class="gender-list">
+                            <li>
+                                <label>
+                                <input type="radio" name="gender" value="male" checked> Чоловіча
+                                </label>        
+                            </li>
+                            <li>
+                                <label>
+                                <input type="radio" name="gender" value="female"> Жіноча
+                                </label>
+                            </li>
+                        </ul>   
+                    </div>
+                    <label for="user-age">Вік</label>
+                    <input type="number" min=0 max=120 name="age" id="user-age">
+                    <br><br>
+                    <label for="course">Курс</label>
+                    <div class="form-row">
+                        <select name="courses" id="course">
+                            <option>Виберіть курс</option>
+                            <option value="front-end">Front-End Розробка</option>
+                            <option value="back-end">Back-End Розробка</option>
+                            <option value="qa-manual">QA Manual</option>
+                        </select>
+                    </div>
+                    <label for="full_adress">Повна адреса</label>
+                    <div class="form-row">
+                    <textarea name="adress" id="full_adress" placeholder="Країна, місто/селище, вулиця, будинок"></textarea>
+                    </div>            
+                </fieldset>
+                <fieldset>
+                    <legend>Згода на обробку персональних даних</legend>
+                    <div class="form-row">
+                        <input type="checkbox" name="user-agreement" id="agreement" required>
+                    </div>
+                    <span>Я погоджуюсь з обробкою моїх персональних даних</span>
+                </fieldset>               
+                <fieldset>
+                    <div class="form-row">
+                        <div class="button-list">
+                        <button type="reset" id="reset-btn">Очистити форму</button>
+                        <button type="submit">Зареєструватися</button>
+                    </div>
+                    </div>
+                </fieldset>
+            </form>
         </div>
-    </footer>   
+    </main>
 </body>
 </html>

@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    color: black;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 30px;
+    background-color: #f2f2f2;
+
+}
+
+h1 {
+    text-decoration-line: underline;
+}
+
+fieldset {
+    border: none;
+}
+
+.form-row {
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+label {
+    width: 150px;
+    display: inline-block;
+}
+
+legend {
+    font-size: 16px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    display: inline;
+}
+
+ul li {
+    display: inline-block;
+}
+
+.gender-list {
+    display: inline-block;
+}
+
+.gender-list label {
+    width: auto;
+}
+
+.gender-list li:first-child {
+    margin-right: 10px;
+}
+
+textarea {
+    width: 170px;
+    height: 100px;
+}
+
+.reset-submit {
+    text-align: center;
+    line-height: 0.05em;
+    background-color: none;
+}
+
+.gender-list li:first-child {
+    margin-right: 10px;
+}
+
+span {
+    font-size: 12px;   
+}
+
+#reset-btn {
+    margin-right: 15px;
+}
+
+.button-list {
+    margin: 0 50px;
+}
