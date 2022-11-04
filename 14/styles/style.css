@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  padding-top: 121px;
+  background-color: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  border: 1px solid #FFCC00;
+}
+
+.first-pic {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.second-pic {
+  grid-area: 2/1/3/2;
+  justify-self: center;
+}
+
+.third-pic {
+  grid-area: 2/2/3/3;
+  justify-self: center;
+}
+
+.first-pic span {
+  display: block;
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #898F8F;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.first-pic h2 {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 66px;
+  color: #FFCC00;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.first-pic .icon {
+  text-align: center;
+}
+
+.icon::before,
+.icon::after {
+  display: inline-block;
+  content: "";
+  width: 210px;
+  border-bottom: 1px solid #FFCC00;
+  margin: 0px 5px;
+  transform: translateY(-10px);
+}
+
+.second-pic {
+  width: 430px;
+}
+
+.photo {
+  margin-top: 98px;
+}
+
+.third-pic {
+  margin-top: 120px;
+  margin-bottom: 99px;
+  width: 430px;
+  text-align: center;
+}
+
+.third-pic h2 {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #666666;
+  text-align: center;
+  padding-bottom: 49px;
+}
+
+.third-pic span {
+  font-family: "Raleway";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  color: #666666;
+}
+
+.social-icons li {
+  display: inline-block;
+  list-style: none;
+  padding-top: 2px;
+  margin: 30px 5px 49px 0;
+}
+
+li a {
+  text-decoration: none;
+}
+
+.third-pic p {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 49px;
+}
+
+.button {
+  width: 118px;
+  height: 24px;
+  border: 1px solid #FFCC00;
+  margin: auto;
+}
+
+.btn-link {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  border: none;
+  background-color: #fff;
+  color: #666666;
+  text-decoration: none;
+}
+
+.icon::before,
+.icon::after {
+  display: inline-block;
+  content: "";
+  width: 210px;
+  border-bottom: 1px solid #FFCC00;
+  margin: 0px 5px;
+  transform: translateY(-10px);
+}
