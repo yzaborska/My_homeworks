@@ -9,6 +9,13 @@ html, body {
   height: 100%;
 }
 
+body {
+  background-image: url("../assets/image/bg-picture.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right 123px top 150px;
+}
+
 .container {
   max-width: 1200px;
   width: 90%;
@@ -16,15 +23,29 @@ html, body {
 }
 
 .header {
-  margin-top: 13px;
+  width: 1200px;
+  padding-top: 13px;
   margin-bottom: 79px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  background-color: #fff;
+  z-index: 1;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  gap: 33px;
 }
 
 .navigation {
   display: flex;
+}
+
+li {
+  list-style: none;
 }
 
 a {
@@ -89,8 +110,32 @@ h2 sup {
   padding-left: 8px;
 }
 
+aside {
+  width: 385px;
+  margin-left: 11px;
+  top: 162px;
+  position: relative;
+}
+
+aside ul {
+  position: sticky;
+  top: 65px;
+}
+
+aside h2 {
+  border-bottom: 1px solid #BDBDBD;
+  padding-bottom: 10px;
+  margin-bottom: 69px;
+}
+
+article {
+  width: 815px;
+  position: relative;
+  top: 150px;
+}
+
 .chapters {
-  margin-bottom: 58px;
+  margin-bottom: 71px;
 }
 
 .chapter3 {
@@ -149,4 +194,11 @@ p.third_pb {
 .pizza {
   transform: scale(-1, 1);
   display: inline-block;
+}
+
+.black_line {
+  width: 100px;
+  height: 8px;
+  background: #000000;
+  margin-bottom: 20px;
 }
