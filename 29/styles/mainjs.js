@@ -37,7 +37,7 @@ function sayHello() {
     if (isNaN(userName) && userName !== null && userName !== '') {
         alert(`Hello, ${userName}!`);
     } else {
-        alert('Enter your name, please');
+        alert(`Enter your name, please`);
     }    
 }
 
@@ -47,12 +47,12 @@ function userAge() {
     if (!isNaN(year_of_birth) && year_of_birth !== null && year_of_birth !== '') {
         const age = current_year - year_of_birth;
         if (age <= 10 || age >= 110) {
-            alert("Age is inapropriate");
+            alert(`Age is inapropriate`);
         } else {
             alert(`Your age is ${age}`);
         }   
     } else {
-        alert("Only numeric value is available");
+        alert(`Only numeric value is available`);
     }
 }
 
@@ -62,7 +62,7 @@ function sqPerimeter() {
         const result = lenth * lenth;
         alert(`The perimeter of the square is ${result}`);
     } else {
-        alert("Only numeric value is available");
+        alert(`Only numeric value is available`);
     }
 }
 

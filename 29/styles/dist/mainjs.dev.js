@@ -37,7 +37,7 @@ function sayHello() {
   if (isNaN(userName) && userName !== null && userName !== '') {
     alert("Hello, ".concat(userName, "!"));
   } else {
-    alert('Enter your name, please');
+    alert("Enter your name, please");
   }
 }
 
